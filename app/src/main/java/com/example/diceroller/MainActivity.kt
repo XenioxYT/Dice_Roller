@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         val dice2 = Dice(6)
         val diceRoll = dice.roll()
         val diceRoll2 = dice2.roll()
-        val resultTextView: TextView = findViewById(R.id.firstDice)
+        val resultTextView: TextView = findViewById(R.id.firstDice) //target change in textView to first dice.
         resultTextView.text = diceRoll.toString()
-        val resultTextView2: TextView = findViewById(R.id.secondDice)
+        val resultTextView2: TextView = findViewById(R.id.secondDice) //target change in textView to second dice.
         resultTextView2.text = diceRoll2.toString()
     }
 }
