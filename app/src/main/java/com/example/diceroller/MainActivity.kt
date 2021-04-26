@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun rollDice() {
-        val dice = Dice(6)
-        val dice2 = Dice(6)
-        val diceRoll = dice.roll()
-        val diceRoll2 = dice2.roll()
+        val dice = Dice(6) // makes var dice from original class Dice
+        val dice2 = Dice(6) //makes var Dice2 from original class Dice
+        val diceRoll = dice.roll() //makes diceRoll2 from Dice function
+        val diceRoll2 = dice2.roll() //makes diceRoll2 from Dice function
         val resultTextView: TextView = findViewById(R.id.firstDice) //target change in textView to first dice.
-        resultTextView.text = diceRoll.toString()
-        val resultTextView2: TextView = findViewById(R.id.secondDice) //target change in textView to second dice.
-        resultTextView2.text = diceRoll2.toString()
+        resultTextView.text = diceRoll.toString() //pushes the change in text to var diceRoll and converts to string
+        val resultTextView2: TextView = findViewById(R.id.secondDice/* specifies the textView that changes*/) //target change in textView to second dice.
+        resultTextView2.text = diceRoll2.toString() // pushes the change in text to var diceRoll and converts to string
     }
 }
 class Dice(private val numSides: Int) {
