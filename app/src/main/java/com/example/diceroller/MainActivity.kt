@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun rollDice() {
-        val dice = Dice(6) // makes var dice from original class Dice
-        val dice2 = Dice(6) //makes var Dice2 from original class Dice
+        val dice = Dice(numSides = 6) // makes var dice from original class Dice
+        val dice2 = Dice(numSides = 6) //makes var Dice2 from original class Dice
         val diceRoll = dice.roll() //makes diceRoll2 from Dice function
         val diceRoll2 = dice2.roll() //makes diceRoll2 from Dice function
         val resultTextView: TextView = findViewById(R.id.firstDice) //target change in textView to first dice.
