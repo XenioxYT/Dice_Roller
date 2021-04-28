@@ -13,7 +13,7 @@ jobs:
         with:
           repo_token: "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"
           prerelease: true
-          automatic_release_tag: "release"
+          automatic_release_tag: "pre-release"
           files: |
             *.apk
           
