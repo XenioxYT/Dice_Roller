@@ -11,7 +11,7 @@ jobs:
       - name: Automatic Releases
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.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 }}"
+          repo_token: "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"
           prerelease: true
           files: |
             *.apk
