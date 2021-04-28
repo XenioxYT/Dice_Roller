@@ -9,4 +9,10 @@ jobs:
       - name: Build the app
         run: ./gradlew build
       - name: Automatic Releases
-        uses: marvinpinto/action-automatic-releases@v1.1.2
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.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 }}"
+          prerelease: true
+          files: |
+            *.apk
+          
