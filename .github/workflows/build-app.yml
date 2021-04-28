@@ -11,7 +11,7 @@ jobs:
       - name: Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "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"
+          repo_token: "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"
           prerelease: true
           automatic_release_tag: "release"
           files: |
